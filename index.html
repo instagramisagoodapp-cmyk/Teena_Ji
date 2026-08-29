@@ -34,24 +34,24 @@ fbq('track', 'PageView');
 <style>
 
 /* =========================================================
-   TOKENS — Cosmic Orange & Dark Space Theme
+   TOKENS — Emerald & Orange Theme
    ========================================================= */
 :root{
-    --bg:#0b0813;
-    --panel:#151022;
-    --panel-2:#1f1733;
-    --line: rgba(255, 122, 0, 0.18);
+    --bg:#07120e;             /* Deep emerald dark background */
+    --panel:#0f221b;          /* Dark green card background */
+    --panel-2:#163328;        /* Slightly lighter green card header/gradient */
+    --line: rgba(16, 185, 129, 0.25); /* Subtle emerald border line */
 
-    --orange:#ff7a00;
-    --orange-soft:#ff9d42;
+    --orange:#ff7a00;         /* Primary accent orange */
+    --orange-soft:#ff9d42;    /* Soft orange for stat values & highlights */
 
     /* Official Telegram Brand Colors */
     --telegram-blue: #229ED9;
     --telegram-hover: #1E8CBF;
 
     --ink:#f8f7fa;
-    --muted:#a39cb3;
-    --muted-2:#6f687e;
+    --muted:#8fae9f;          /* Muted greenish-gray text */
+    --muted-2:#567868;
 
     --display:'Space Grotesk', sans-serif;
     --body:'Inter', sans-serif;
@@ -62,18 +62,11 @@ fbq('track', 'PageView');
     --radius-pill: 999px;
 }
 
-*{ margin:0; padding:0; box-sizing:border-box; }
-html, body{ 
-    scroll-behavior:smooth; 
-    overflow-x:hidden;
-    touch-action: manipulation;
-}
-
 body{
     background-color:var(--bg);
     background-image:
-        radial-gradient(60% 40% at 50% -10%, rgba(255,122,0,0.18), transparent 60%),
-        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='84' height='84' viewBox='0 0 84 84'%3E%3Cg fill='none' stroke='%23ff7a00' stroke-opacity='0.05' stroke-width='1'%3E%3Cpath d='M42 2 L82 42 L42 82 L2 42 Z'/%3E%3Ccircle cx='42' cy='42' r='19'/%3E%3C/g%3E%3C/svg%3E");
+        radial-gradient(60% 40% at 50% -10%, rgba(16, 185, 129, 0.2), transparent 60%),
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='84' height='84' viewBox='0 0 84 84'%3E%3Cg fill='none' stroke='%2310b981' stroke-opacity='0.07' stroke-width='1'%3E%3Cpath d='M42 2 L82 42 L42 82 L2 42 Z'/%3E%3Ccircle cx='42' cy='42' r='19'/%3E%3C/g%3E%3C/svg%3E");
     color:var(--ink);
     font-family:var(--body);
     min-height:100vh;
